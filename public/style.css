@@ -1,111 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #000000;          /* Bloomberg 纯黑底 */
-  --text: #ffffff;        /* 纯白正文 */
-  --muted: #b3b3b3;       /* 副标题、域名 */
-  --accent: #ff6c00;      /* Bloomberg 经典橙 */
-  --accent-hover: #ff8c33;
-  --border: #333333;
-  --card: #0d0d0d;
-  --radius: 8px;
+  --bg: #0c0c0c;          /* 柔和深灰黑，不是纯黑 */
+  --surface: #1a1a1a;     /* 卡片底色 */
+  --text: #e0e0e0;        /* 高对比白（不是刺眼纯白） */
+  --muted: #888888;       /* 副文本、域名 */
+  --accent: #ff9500;      /* Bloomberg 正宗橙，但柔和版 */
+  --accent-hover: #ffb143;
+  --border: #2d2d2d;
+  --link: #ff9500;        /* 链接用橙色，不再用蓝！ */
+  --link-hover: #ffb143;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   margin: 0;
-  padding: 3rem 1rem;
+  padding: 4rem 2rem;     /* 上下下留白，左右大留白 */
   min-height: 100vh;
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
-  font-size: 18px;        /* 字体整体放大 */
+  line-height: 1.8;
+  font-size: 18.5px;      /* 文字更大，更舒服 */
 }
 
 .container {
-  max-width: 960px;       /* 内容区收窄，视觉更聚焦 */
-  margin: 0 auto;
+  max-width: 1000px;      /* 内容区收窄 */
+  margin: 0 auto;         /* 完美居中 */
+  padding: 0 1rem;
 }
 
 /* 标题 */
 header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0 0 0.5rem;
   color: var(--accent);
-  letter-spacing: -0.5px;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.8px;
 }
 
 .subtitle {
   color: var(--muted);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 /* 分类卡片 */
 .category {
-  margin-bottom: 3rem;
-  background: var(--card);
+  margin-bottom: 3.5rem;
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem;
+  border-radius: 12px;
+  padding: 2rem 2rem;
+  transition: transform 0.2s ease;
+}
+
+.category:hover {
+  transform: translateY(-2px);
 }
 
 .category h2 {
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: var(--accent);
-  margin: 0 0 1.5rem 0;
-  padding-bottom: 0.5rem;
+  margin: 0 0 1.8rem 0;
+  padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--accent);
   display: inline-block;
 }
 
-.feed-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
-  list-style: none;
+/* 文章列表 */
+.feed {
+  margin-bottom: 1.8rem;
 }
 
-.feed-list a {
-  display: block;
-  padding: 1rem 1.2rem;
-  background: #1a1a1a;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--text);
+.feed h3 {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+  font-weight: 500;
+}
+
+.feed h3 a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.feed h3 a:hover {
+  color: var(--accent);
+}
+
+.feed ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feed li {
+  margin-bottom: 0.85rem;
+  padding-left: 0.2rem;
+}
+
+.feed li a {
+  color: var(--link);
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.25s ease;
-  font-size: 1.05rem;
+  padding: 0.15rem 0;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
-.feed-list a:hover {
-  background: var(--accent);
-  color: #000;
-  border-color: var(--accent);
-  transform: translateY(-2px);
+.feed li a:hover {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--link-hover);
+}
+
+/* 时间前缀美化 */
+.feed li::before {
+  content: "●";
+  color: var(--accent);
+  font-size: 0.6em;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+  opacity: 0.7;
 }
 
 /* 手机端 */
-@media (max-width: 640px) {
-  body { padding: 2rem 1rem; font-size: 17px; }
-  h1 { font-size: 2.4rem; }
-  .feed-list { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
+  body { padding: 3rem 1rem; font-size: 18px; }
+  h1 { font-size: 2.5rem; }
+  .container { padding: 0 0.5rem; }
   .category { padding: 1.5rem; }
 }
 
 footer {
   text-align: center;
-  padding: 4rem 0 2rem;
+  padding: 5rem 0 2rem;
   color: var(--muted);
   font-size: 0.95rem;
 }
-footer a { color: var(--accent); text-decoration: none; }
