@@ -4,54 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>🦉 Ray fun Reader</title>
+    <title>Ray Reader</title>
     <link rel="stylesheet" href="/style.css" />
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/200200/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
   </head>
   <body>
-    <h1>🦉 Ray Fun Reader</h1>
+    <main class="container">
+      <header>
+        <h1>🦉 Ray Fun Reader</h1>
+      </header>
 
-    {% for group, feeds in data %}
-    <h2>{{ group }}</h2>
-    {% for feed in feeds %}
-    <details>
-      <summary>
-        <span class="feed-title">{{ feed.title }}</span>
-        <span class="feed-url">({{ feed.feed }})</span>
-      </summary>
-      <ul>
-        {% for item in feed.items %}
-        <li>
-          {{ item.timestamp | formatDate }} -
-          <a
-            href="{{ item.link }}"
-            target="_blank"
-            rel="noopener norefferer nofollow"
-            >{{ item.title }}</a
-          >
-        </li>
-        {% endfor %}
-      </ul>
-    </details>
-    {% endfor %} {% endfor %} {% if errors | length > 0 %}
-    <h2>Errors</h2>
-    <p>There were errors trying to parse these feeds:</p>
-    <ul>
-      {% for error in errors %}
-      <li>{{ error }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
+      {% for group, feeds in data %}
+      <section class="feed-group">
+        <h2>{{ group }}</h2>
+        {% for feed in feeds %}
+        <details>
+          <summary>
+            <span>
+              <span class="feed-title">{{ feed.title }}</span>
+              <span class="feed-url">{{ feed.feed }}</span>
+            </span>
+          </summary>
+          <ul>
+            {% for item in feed.items %}
+            <li>
+              <span class="date">{{ item.timestamp | formatDate }}</span>
+              <a
+                href="{{ item.link }}"
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                >{{ item.title }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endfor %} 
+      </section>
+      {% endfor %} 
+      
+      {% if errors | length > 0 %}
+      <section class="error-section">
+        <h2>System Errors</h2>
+        <p>There were errors trying to parse these feeds:</p>
+        <ul>
+          {% for error in errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
 
-    <br />
-    <hr />
-    <p>Last updated {{ now }}.</p>
-    <p>
-      Powered by
-      <a href="https://github.com/georgemandis/bubo-rss"
-        >Bubo Reader (v{{ info.version }})</a
-      >, a project by <a href="https://george.mand.is">George Mandis</a>. ❤️
-      <a href="{{ info.funding.url }}">Sponsor on GitHub</a>
-    </p>
+      <footer>
+        <p>Last updated: {{ now }}</p>
+        <p>
+          Powered by
+          <a href="https://github.com/georgemandis/bubo-rss">Bubo Reader (v{{ info.version }})</a>
+          — A project by <a href="https://george.mand.is">George Mandis</a>.
+          <br>
+          <a href="{{ info.funding.url }}">Sponsor on GitHub</a>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
