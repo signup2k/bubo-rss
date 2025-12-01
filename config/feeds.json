@@ -1,107 +1,102 @@
 {
-  "categories": {
-    "未分类": [
-      {
-        "name": "Musings on Markets",
-        "url": "https://aswathdamodaran.blogspot.com/feeds/posts/default"
-      }
-    ],
+  "未分类": [
+    "https://aswathdamodaran.blogspot.com/feeds/posts/default"
+  ],
 
-    "Blog/其他": [
-      { "name": "Astral Codex Ten", "url": "https://www.astralcodexten.com/feed" },
-      { "name": "Behind the Balance Sheet", "url": "https://behindthebalancesheet.substack.com/feed" },
-      { "name": "Ed Zitron's Where's Your Ed At", "url": "https://www.wheresyoured.at/rss" },
-      { "name": "Farnam Street", "url": "https://www.farnamstreetblog.com/feed" },
-      { "name": "Gwern.net Newsletter", "url": "https://gwern.substack.com/feed" },
-      { "name": "More To That", "url": "https://moretothat.com/feed" },
-      { "name": "Net Interest", "url": "https://www.netinterest.co/feed" },
-      { "name": "Off by One", "url": "https://justoffbyone.com/rss.xml" },
-      { "name": "Overcoming Bias", "url": "https://www.overcomingbias.com/feed" },
-      { "name": "Paul Graham: Essays", "url": "http://www.aaronsw.com/2002/feeds/pgessays.rss" },
-      { "name": "Speculative Branches", "url": "https://specbranch.com/index.xml" },
-      { "name": "The Diff", "url": "https://www.thediff.co/archive/rss/" },
-      { "name": "Wait But Why", "url": "https://waitbutwhy.com/feed" }
-    ],
+  "Blog/其他": [
+    "https://www.astralcodexten.com/feed",
+    "https://behindthebalancesheet.substack.com/feed",
+    "https://www.wheresyoured.at/rss",
+    "https://www.farnamstreetblog.com/feed",
+    "https://gwern.substack.com/feed",
+    "https://moretothat.com/feed",
+    "https://www.netinterest.co/feed",
+    "https://justoffbyone.com/rss.xml",
+    "https://www.overcomingbias.com/feed",
+    "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+    "https://specbranch.com/index.xml",
+    "https://www.thediff.co/archive/rss/",
+    "https://waitbutwhy.com/feed"
+  ],
 
-    "Blog/code|app": [
-      { "name": "分享发现", "url": "https://v2ex.com/feed/share.xml" },
-      { "name": "阮一峰的网络日志", "url": "http://www.ruanyifeng.com/blog/atom.xml" },
-      { "name": "Hardcore Software by Steven Sinofsky", "url": "https://hardcoresoftware.learningbyshipping.com/feed" },
-      { "name": "Release notes from nicegui", "url": "https://github.com/zauberzeug/nicegui/releases.atom" }
-    ],
+  "Blog/code|app": [
+    "https://v2ex.com/feed/share.xml",
+    "http://www.ruanyifeng.com/blog/atom.xml",
+    "https://hardcoresoftware.learningbyshipping.com/feed",
+    "https://github.com/zauberzeug/nicegui/releases.atom"
+  ],
 
-    "Blog/mkt": [
-      { "name": "Philosophical Economics低频更新", "url": "https://www.philosophicaleconomics.com/feed" },
-      { "name": "A Wealth of Common Sense", "url": "https://awealthofcommonsense.com/feed" },
-      { "name": "Advisor Perspectives", "url": "https://www.advisorperspectives.com/content.rss" },
-      { "name": "Bill Gross", "url": "https://williamhgross.com/feed/" },
-      { "name": "Bloomberg Professional Services", "url": "https://www.bloomberg.com/professional/feed/" },
-      { "name": "Calafia Beach Pundit", "url": "http://www.blogger.com/feeds/6616959642391988608/posts/default" },
-      { "name": "Calculated Risk", "url": "http://www.blogger.com/feeds/10004977/posts/default?alt=atom&redirect=false" },
-      { "name": "CFA Institute Enterprising Investor", "url": "https://blogs.cfainstitute.org/investor/feed/" },
-      { "name": "CFA Institute Research and Policy Center", "url": "https://rpc.cfainstitute.org/ICE-Feeds/RPC-Publications-Feed" },
-      { "name": "China Last Night", "url": "https://chinalastnight.com/feed/" },
-      { "name": "Dragonfly Capital", "url": "https://dragonflycap.com/feed/" },
-      { "name": "Econlib", "url": "https://www.econlib.org/feed/" },
-      { "name": "Edge and Odds", "url": "https://www.edgeandodds.com/feed/" },
-      { "name": "FT Alphaville", "url": "https://www.ft.com/alphaville?format=rss" },
-      { "name": "Global Macro Monitor", "url": "https://global-macro-monitor.com/feed/" },
-      { "name": "Humble Student of the Markets", "url": "http://www.blogger.com/feeds/816559531110064247/posts/default?redirect=false" },
-      { "name": "Klement on Investing", "url": "https://klementoninvesting.substack.com/feed" },
-      { "name": "Open Vault", "url": "https://www.stlouisfed.org/rss/page-resources/publications/open-vault-blog" },
-      { "name": "Physik Invest", "url": "https://physikinvest.com/feed/" },
-      { "name": "The Big Picture", "url": "https://ritholtz.com/feed/" },
-      { "name": "The Daily Shot Brief", "url": "https://dailyshotbrief.com/feed/" },
-      { "name": "Trend Following Trading Systems from Michael Covel", "url": "https://www.trendfollowing.com/feed/" },
-      { "name": "Unhedged", "url": "https://www.ft.com/unhedged?format=rss" }
-    ],
+  "Blog/mkt": [
+    "https://www.philosophicaleconomics.com/feed",
+    "https://awealthofcommonsense.com/feed",
+    "https://www.advisorperspectives.com/content.rss",
+    "https://williamhgross.com/feed/",
+    "https://www.bloomberg.com/professional/feed/",
+    "http://www.blogger.com/feeds/6616959642391988608/posts/default",
+    "http://www.blogger.com/feeds/10004977/posts/default?alt=atom&redirect=false",
+    "https://blogs.cfainstitute.org/investor/feed/",
+    "https://rpc.cfainstitute.org/ICE-Feeds/RPC-Publications-Feed",
+    "https://chinalastnight.com/feed/",
+    "https://dragonflycap.com/feed/",
+    "https://www.econlib.org/feed/",
+    "https://www.edgeandodds.com/feed/",
+    "https://www.ft.com/alphaville?format=rss",
+    "https://global-macro-monitor.com/feed/",
+    "http://www.blogger.com/feeds/816559531110064247/posts/default?redirect=false",
+    "https://klementoninvesting.substack.com/feed",
+    "https://www.stlouisfed.org/rss/page-resources/publications/open-vault-blog",
+    "https://physikinvest.com/feed/",
+    "https://ritholtz.com/feed/",
+    "https://dailyshotbrief.com/feed/",
+    "https://www.trendfollowing.com/feed/",
+    "https://www.ft.com/unhedged?format=rss"
+  ],
 
-    "FedWatch": [
-      { "name": "FRB: Press Release - All Releases", "url": "https://www.federalreserve.gov/feeds/press_all.xml" },
-      { "name": "FRB: Speeches", "url": "https://www.federalreserve.gov/feeds/speeches.xml" }
-    ],
+  "FedWatch": [
+    "https://www.federalreserve.gov/feeds/press_all.xml",
+    "https://www.federalreserve.gov/feeds/speeches.xml"
+  ],
 
-    "News/其他": [
-      { "name": "Nature", "url": "https://www.nature.com/nature.rss" },
-      { "name": "Visual and data journalism", "url": "https://www.ft.com/visual-and-data-journalism?format=rss" }
-    ],
+  "News/其他": [
+    "https://www.nature.com/nature.rss",
+    "https://www.ft.com/visual-and-data-journalism?format=rss"
+  ],
 
-    "News/mkt": [
-      { "name": "《联合早报》-中国-新闻", "url": "https://rsshub.rssforever.com/zaobao/znews/china" },
-      { "name": "财新网 - 最新文章", "url": "https://rsshub.rssforever.com/caixin/latest" },
-      { "name": "日经中文网--日本经济新闻中文版", "url": "https://rsshub.app/nikkei/cn" },
-      { "name": "Bloomberg - Markets", "url": "https://rsshub.app/bloomberg/markets" },
-      { "name": "Breaking News Headlines | Latest Views | Reuters", "url": "https://rsshub.app/reuters/breakingviews" },
-      { "name": "China", "url": "https://www.ft.com/china?format=rss" },
-      { "name": "China - South China Morning Post", "url": "https://www.scmp.com/rss/4/feed" },
-      { "name": "China News | Today's Breaking Stories | Reuters", "url": "https://rsshub.app/reuters/world/china" },
-      { "name": "Markets", "url": "https://www.ft.com/markets?format=rss" },
-      { "name": "WSJ.com: Markets", "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml" }
-    ],
+  "News/mkt": [
+    "https://rsshub.rssforever.com/zaobao/znews/china",
+    "https://rsshub.rssforever.com/caixin/latest",
+    "https://rsshub.app/nikkei/cn",
+    "https://rsshub.app/bloomberg/markets",
+    "https://rsshub.app/reuters/breakingviews",
+    "https://www.ft.com/china?format=rss",
+    "https://www.scmp.com/rss/4/feed",
+    "https://rsshub.app/reuters/world/china",
+    "https://www.ft.com/markets?format=rss",
+    "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
+  ],
 
-    "Podcast/mkt": [
-      { "name": "Meb Faber Research – Stock Market and Investing Blog", "url": "https://mebfaber.com/feed/" }
-    ],
+  "Podcast/mkt": [
+    "https://mebfaber.com/feed/"
+  ],
 
-    "Report/papers": [
-      { "name": "All categories", "url": "https://www.bis.org/doclist/rss_all_categories.rss" },
-      { "name": "BIS Papers series", "url": "https://www.bis.org/doclist/bispapers.rss" },
-      { "name": "BIS Working papers - english", "url": "https://www.bis.org/doclist/wppubls.rss?from=/" },
-      { "name": "ECB - European Central Bank (RBU)", "url": "https://www.ecb.europa.eu/rss/rbu.html" },
-      { "name": "ECB - European Central Bank (Working Papers)", "url": "https://www.ecb.europa.eu/rss/wppub.html" },
-      { "name": "FRB: Current FAQs", "url": "https://www.federalreserve.gov/feeds/currentfaqs.xml" },
-      { "name": "FRB: FEDS Notes", "url": "https://www.federalreserve.gov/feeds/feds_notes.xml" },
-      { "name": "FRB: Finance and Economics Discussion Series", "url": "https://www.federalreserve.gov/feeds/feds.xml" },
-      { "name": "FRB: International Finance Discussion Papers", "url": "https://www.federalreserve.gov/feeds/ifdp.xml" },
-      { "name": "FRB: Working Papers", "url": "https://www.federalreserve.gov/feeds/working_papers.xml" },
-      { "name": "Liberty Street Economics", "url": "https://libertystreeteconomics.the newyorkfed.org/feed/" },
-      { "name": "OMFIF", "url": "https://www.omfif.org/feed/" },
-      { "name": "Working Papers - Federal Reserve Bank of Richmond", "url": "https://www.richmondfed.org/publications/research/working_papers/index.cfm?cc_view=rss" }
-    ],
+  "Report/papers": [
+    "https://www.bis.org/doclist/rss_all_categories.rss",
+    "https://www.bis.org/doclist/bispapers.rss",
+    "https://www.bis.org/doclist/wppubls.rss?from=/",
+    "https://www.ecb.europa.eu/rss/rbu.html",
+    "https://www.ecb.europa.eu/rss/wppub.html",
+    "https://www.federalreserve.gov/feeds/currentfaqs.xml",
+    "https://www.federalreserve.gov/feeds/feds_notes.xml",
+    "https://www.federalreserve.gov/feeds/feds.xml",
+    "https://www.federalreserve.gov/feeds/ifdp.xml",
+    "https://www.federalreserve.gov/feeds/working_papers.xml",
+    "https://libertystreeteconomics.newyorkfed.org/feed/",
+    "https://www.omfif.org/feed/",
+    "https://www.richmondfed.org/publications/research/working_papers/index.cfm?cc_view=rss"
+  ],
 
-    "Reports/机构市场研究": [
-      { "name": "Big Data China", "url": "http://bigdatachina.csis.org/feed/" },
-      { "name": "Research & Insights", "url": "https://www.bridgewater.com/research-and-insights.rss" }
-    ]
-  }
+  "Reports/机构市场研究": [
+    "http://bigdatachina.csis.org/feed/",
+    "https://www.bridgewater.com/research-and-insights.rss"
+  ]
 }
