@@ -23,7 +23,8 @@
     "https://v2ex.com/feed/share.xml",
     "http://www.ruanyifeng.com/blog/atom.xml",
     "https://hardcoresoftware.learningbyshipping.com/feed",
-    "https://github.com/zauberzeug/nicegui/releases.atom"
+    "https://github.com/zauberzeug/nicegui/releases.atom",
+    "https://rsshub.app/baoyu/blog"
   ],
 
   "Blog/mkt": [
