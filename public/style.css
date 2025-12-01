@@ -1,149 +1,111 @@
-/* Bubo RSS 现代化美化 - 2025 版 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #fafafa;
-  --text: #1f2937;
-  --border: #e5e7eb;
-  --card-bg: #ffffff;
-  --link: #3b82f6;
-  --link-hover: #2563eb;
-  --category: #4b5563;
-  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-  --radius: 12px;
+  --bg: #000000;          /* Bloomberg 纯黑底 */
+  --text: #ffffff;        /* 纯白正文 */
+  --muted: #b3b3b3;       /* 副标题、域名 */
+  --accent: #ff6c00;      /* Bloomberg 经典橙 */
+  --accent-hover: #ff8c33;
+  --border: #333333;
+  --card: #0d0d0d;
+  --radius: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f172a;
-    --text: #e2e8f0;
-    --border: #334155;
-    --card-bg: #1e293b;
-    --link: #60a5fa;
-    --link-hover: #93bbfc;
-    --category: #94a3b8;
-    --shadow: 0 4px 6px -1px rgba(0,0,0,0.3), 0 2px 4px -1px rgba(0,0,0,0.2);
-  }
-}
-
-* { box-sizing: border-box; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   min-height: 100vh;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 18px;        /* 字体整体放大 */
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 960px;       /* 内容区收窄，视觉更聚焦 */
   margin: 0 auto;
 }
 
+/* 标题 */
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
-  color: var(--category);
-  font-size: 1.1rem;
-  margin: 0;
+  color: var(--muted);
+  font-size: 1.25rem;
 }
 
 /* 分类卡片 */
 .category {
-  margin-bottom: 2.5rem;
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease;
+  margin-bottom: 3rem;
+  background: var(--card);
   border: 1px solid var(--border);
-}
-
-.category:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  border-radius: var(--radius);
+  padding: 2rem;
 }
 
 .category h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.4rem;
-  color: var(--link);
+  font-size: 1.5rem;
   font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1.5rem 0;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--link);
+  border-bottom: 2px solid var(--accent);
   display: inline-block;
 }
 
 .feed-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1rem;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.feed-list li {
-  margin: 0;
 }
 
 .feed-list a {
-  display: flex;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  background: rgba(99,102,241,0.05);
+  display: block;
+  padding: 1rem 1.2rem;
+  background: #1a1a1a;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 6px;
   color: var(--text);
+  text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease;
-  font-size: 0.98rem;
+  transition: all 0.25s ease;
+  font-size: 1.05rem;
 }
 
 .feed-list a:hover {
-  background: var(--link);
-  color: white;
-  border-color: var(--link);
-  transform: translateX(4px);
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
-.feed-list a::before {
-  content: "↗";
-  margin-right: 0.5rem;
-  font-size: 1.1em;
-  opacity: 0.7;
-}
-
-/* 手机优化 */
+/* 手机端 */
 @media (max-width: 640px) {
-  body { padding: 1rem 0.5rem; }
-  h1 { font-size: 2rem; }
+  body { padding: 2rem 1rem; font-size: 17px; }
+  h1 { font-size: 2.4rem; }
   .feed-list { grid-template-columns: 1fr; }
-  .category { padding: 1.2rem; }
+  .category { padding: 1.5rem; }
 }
 
-/* 页脚小彩蛋 */
 footer {
   text-align: center;
-  padding: 3rem 1rem 1rem;
-  color: var(--category);
-  font-size: 0.9rem;
+  padding: 4rem 0 2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
-footer a { color: var(--link); text-decoration: none; }
+footer a { color: var(--accent); text-decoration: none; }
